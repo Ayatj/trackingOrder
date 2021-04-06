@@ -1,0 +1,26 @@
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: var(--space-medium);
+    align-items: center;
+    padding: var(--space-medium);
+   
+   
+  }
+  
+  .header.light {
+    background-color: white;
+  }
+  
+  
+  
+  .header img {
+    max-width: 120px;
+     height: auto; 
+  }
+  
+  @media (min-width: 550px) {
+    .header {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
